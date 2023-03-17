@@ -4362,7 +4362,7 @@ static void dump_print(int ws_row, int ws_col, int if_num)
 			ap_cur = ap_cur->prev;
 		}
 	}
-
+	lopt.do_exit = 1;//changedbb
 	if (lopt.show_ack)
 	{
 		/* print some information about each unknown station */
@@ -4383,7 +4383,7 @@ static void dump_print(int ws_row, int ws_col, int if_num)
 		strbuf[ws_col - 1] = '\0';
 		console_puts(strbuf);
 		CHECK_END_OF_SCREEN();
-
+		
 		na_cur = lopt.na_1st;
 
 		while (na_cur != NULL)
@@ -6219,7 +6219,7 @@ int main(int argc, char * argv[])
 			&option_index);
 
 		if (option < 0) break;
-
+		
 		switch (option)
 		{
 			case 0:
