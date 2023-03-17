@@ -1,5 +1,5 @@
 # Aircrack-ng
-
+The mods changes the airodump-ng outputs from a continuious result to a discrete result. this is edit is for a RSSI-camera project.
 ## Badges
 
 ### GitHub CI
